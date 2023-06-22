@@ -1,5 +1,5 @@
 {
-  "name": "fs-curso-3a",
+  "name": "ex3a",
   "version": "1.0.0",
   "description": "mod3-a",
   "main": "index.js",
@@ -15,5 +15,8 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
-  }
+  },
+  "keywords": [
+    "ex3.1/3.6"
+  ]
 }

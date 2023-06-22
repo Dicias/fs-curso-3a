@@ -1,4 +1,4 @@
-GET http://localhost:3001/api/notes
+GET http://localhost:3001/api/persons
 ###
 
 POST http://localhost:3001/api/notes
@@ -9,3 +9,19 @@ Content-Type: application/json
     "important" : true
 }
 
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "test 3",
+    "number": "040-123456"
+} 
+###
+GET http://localhost:3001/info
+
+###
+GET http://localhost:3001/api/persons/1
+
+###
+DELETE http://localhost:3001/api/persons/4
