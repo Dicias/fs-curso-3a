@@ -2,6 +2,11 @@
 const express = require('express')
 const app = express()
 app.use(express.json())
+var morgan = require('morgan')
+morgan.token('body', (req)=>JSON.stringify(req.body)) 
+app.use(morgan(':url :method :body' ))
+
+
 
 const requestLogger = (request,response,next) =>{
     console.log('Method:' , request.method)
@@ -36,7 +41,7 @@ let persons = [
 ]
 
 app.get('/',(request, response)=>{
-    response.send('<h1>Hello World from persons</h1>')
+    response.send('<h1>Morgan</h1>')
 })
 
 app.get('/api/persons',(request, response)=>{
