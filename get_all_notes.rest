@@ -15,13 +15,13 @@ Content-Type: application/json
 
 {
     "name": "test 4",
-    "number": "040-123456"
+    "num": "040-123456"
 } 
 ###
-GET http://localhost:3001/info
+GET http://localhost:3001/
 
 ###
-GET http://localhost:3001/api/persons/test
+GET http://localhost:3001/api/persons
 
 ###
-DELETE http://localhost:3001/api/persons/test
+DELETE http://localhost:3001/api/persons/
