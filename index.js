@@ -43,7 +43,9 @@ let persons = [
 ]
 
 app.get('/',(request, response)=>{
-    response.send('<h1>Morgan</h1>')
+    const date = new Date
+    response.send(`<p>Phonebook has info for ${persons.length}</p>
+    <p> ${date}</p> `)
 })
 
 app.get('/api/persons',(request, response)=>{
