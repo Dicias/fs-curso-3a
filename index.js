@@ -44,11 +44,6 @@ let persons = [
     }
 ]
 
-app.get('/',(request, response)=>{
-    const date = new Date
-    response.send(`<p>Phonebook has info for ${persons.length}</p>
-    <p> ${date}</p> `)
-})
 
 app.get('/api/persons',(request, response)=>{
     response.json(persons)
