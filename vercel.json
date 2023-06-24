@@ -8,8 +8,12 @@
     ],
     "routes" : [
         {
-            "src" : "/dist/(.*)",
+            "src" : "/api/.*",
             "dest" : "/index.js"
+        },
+        {
+            "src" : "/",
+            "dest" : "dist/index.html"
         }
     ]
 }
