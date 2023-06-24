@@ -10,7 +10,6 @@ morgan.token('body', (req)=>JSON.stringify(req.body))
 app.use(morgan(':url :method :body' ))
 
 
-
 const requestLogger = (request,response,next) =>{
     console.log('Method:' , request.method)
     console.log('Path: ' ,request.path)
