@@ -6,8 +6,10 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
+    "build:ui": "@powershell Remove-Item -Recurse -Force build && cd ../../osa2/materiaali/notes-new && npm run build && @powershell Copy-Item build -Recurse ../../../osa3/notes-backend/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  
   "author": "dicias",
   "license": "MIT",
   "dependencies": {
