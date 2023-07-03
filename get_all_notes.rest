@@ -1,21 +1,11 @@
 GET http://localhost:3001/api/persons
 ###
-
-POST http://localhost:3001/api/notes
-Content-Type: application/json
-
-{
-    "content" : "VS CODE REST...",
-    "important" : true
-}
-
-###
 POST http://localhost:3001/api/persons
 Content-Type: application/json
 
 {
-    "name": "test 4",
-    "num": "040-123456"
+    "name": "a",
+    "num": "040-123-0456"
 } 
 ###
 GET http://localhost:3001/
